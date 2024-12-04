@@ -1,0 +1,47 @@
+<title>Calculator</title>
+<h1>Calculator</h1>
+    <div class="container">
+        <div class="display">
+            <form action="" [formGroup]= "inputStr">
+                <input type="text" formControlName="text">
+            </form>
+        </div>
+
+        <div class="buttons">
+            <div class="operators">
+                <div class="col">
+                    <button (click)="buttonClick($event.target)" class="btn">+</button>
+                    <button (click)="buttonClick($event.target)" class="btn">-</button>
+                    <button (click)="buttonClick($event.target)" class="btn">*</button>
+                    <button (click)="buttonClick($event.target)" class="btn">/</button>
+                    <button (click)="solve()" class="btn">=</button>
+                </div>
+            </div>
+            <div class="operands">
+                <div class="col">
+                    <button (click)="buttonClick($event.target)" class="btn">1</button>
+                    <button (click)="buttonClick($event.target)" class="btn">2</button>
+                    <button (click)="buttonClick($event.target)" class="btn">3</button>
+                    <button (click)="cleardisplay()" class="btn">C</button>
+                </div>
+            </div>
+
+            <div class="operands">
+                <div class="col">
+                    <button (click)="buttonClick($event.target)" class="btn">4</button>
+                    <button (click)="buttonClick($event.target)" class="btn">5</button>
+                    <button (click)="buttonClick($event.target)" class="btn">6</button>
+                    <button (click)="buttonClick($event.target)" class="btn">0</button>
+                </div>
+            </div>
+
+            <div class="operands">
+                <div class="col">
+                    <button (click)="buttonClick($event.target)" class="btn">7</button>
+                    <button (click)="buttonClick($event.target)" class="btn">8</button>
+                    <button (click)="buttonClick($event.target)" class="btn">9</button>
+                    <button (click)="buttonClick($event.target)" class="btn">.</button>
+                </div>
+            </div>
+        </div>
+    </div>
